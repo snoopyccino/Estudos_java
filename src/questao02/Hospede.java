@@ -1,33 +1,46 @@
 package questao02;
 
 public class Hospede {
-    private String Nome;
-    private String Documento;
-    private String Telefone;
+
+    private String nome;
+    private String documento;
+    private String telefone;
+
+    public Hospede() {}
+
+    public Hospede(String nome, String documento, String telefone) {
+        this.nome = nome;
+        this.documento = documento;
+        this.telefone = telefone;
+    }
 
     public void setNome(String nome) {
-        this.Nome = nome;
+        this.nome = nome;
     }
 
     public void setDocumento(String documento) {
-        this.Documento = documento;
+        this.documento = documento;
     }
 
     public void setTelefone(String telefone) {
-        this.Telefone = telefone;
+        this.telefone = telefone;
     }
 
     public String getNome() {
-        return this.Nome;
+        return this.nome;
     }
 
     public String getDocumento() {
-        return this.Documento;
+        return this.documento;
     }
 
     public String getTelefone() {
-        return this.Telefone;
+        return this.telefone;
     }
+
+    @Override
     public String toString() {
-		return " Nome: " + Nome + " -  Documento: " + Documento + " - Telefone: " + Telefone;}
+        return "Nome: " + nome + " - Documento: " + documento + " - Telefone: " + telefone;
+    }
+
 }
