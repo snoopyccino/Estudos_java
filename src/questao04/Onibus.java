@@ -6,9 +6,7 @@ public class Ônibus {
     private int capacidade;
     private String modelo;
 
-    public Onibus() {
-
-    }
+    public Onibus() {}
 
     public Onibus(String placa, int capacidade, String modelo) {
         this.placa = placa;
