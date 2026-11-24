@@ -42,14 +42,10 @@ public class Quarto {
         return this.valorDiaria;
     }
 
-    @Override
+    
     public String toString() {
         return "Numero: " + numero + " - Tipo: " + tipo + " - Valor da diaria: " + valorDiaria;
     }
 
 };
     }
-	public String toString() {
-		return " Tipo do quarto: " + Tipo + " -  numero: " + Numero + " - Valor da diaria: " + ValorDiaria;}
-}
-
