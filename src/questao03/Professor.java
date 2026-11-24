@@ -6,9 +6,7 @@ public class Professor {
     private String formacao;
     private int cargaHoraria;
 
-    public Professor() {
-
-    }
+    public Professor() {}
 
     public Professor(String nome, String formacao, int cargaHoraria) {
         this.nome = nome;
