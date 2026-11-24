@@ -2,35 +2,44 @@ package questao04;
 
 public class Linha {
 
+    private String codigo;
+    private String destinoFinal;
+    private double extensao;
 
-    private String Codigo;
-    private String DestinoFinal;
-    private double Extensao;
+    public Linha() {}
 
-    public void setCodigo(String codigo) {
-        this.Codigo = codigo;
+    public Linha(String codigo, String destinoFinal, double extensao) {
+        this.codigo = codigo;
+        this.destinoFinal = destinoFinal;
+        this.extensao = extensao;
     }
 
-    public void setDestinoFinal(String destino) {
-        this.DestinoFinal = destino;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setDestinoFinal(String destinoFinal) {
+        this.destinoFinal = destinoFinal;
     }
 
     public void setExtensao(double extensao) {
-        this.Extensao = extensao;
+        this.extensao = extensao;
     }
 
     public String getCodigo() {
-        return this.Codigo;
+        return this.codigo;
     }
 
     public String getDestinoFinal() {
-        return this.DestinoFinal;
+        return this.destinoFinal;
     }
 
     public double getExtensao() {
-        return this.Extensao;
+        return this.extensao;
     }
+
     public String toString() {
-		return " Codigo: " + Codigo + " -  Destino final: " + DestinoFinal + " - Extensao: " + Extensao;
-	}
+        return "Codigo: " + codigo + " - Destino final: " + destinoFinal + " - Extensao: " + extensao;
+    }
+
 }
