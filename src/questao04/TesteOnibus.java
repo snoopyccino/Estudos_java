@@ -2,35 +2,42 @@ package questao04;
 
 public class TesteOnibus {
 
-	public static void Linha() {
-		Linha l1 = new Linha();
-		l1.setCodigo("3");
-		l1.setDestinoFinal("Lapa");
-		l1.setExtensao(2);
-		System.out.println(l1);
-		
-	}
-	public static void Motorista() {
-		Motorista m1 = new Motorista();
-		m1.setNome("Vinicius");
-		m1.setCNH("32109");
-		m1.setCategoria("B");
-		System.out.println(m1);
-		
-	}
-	public static void Onibus() {
-		Onibus o1 = new Onibus();
-		o1.setPlaca("SKC-54BF");
-		o1.setModelo("SEDAN");
-		o1.setCapacidade(30);
-		System.out.println(o1);
-	}
-		
-		public static void main(String[] args) {
-	Linha();
-		
-		Motorista();
-		Onibus();
-		}
+    public static void motorista() {
 
-	}
+        Motorista m1 = new Motorista();
+        System.out.println(m1);
+
+        Motorista m2 = new Motorista("Carlos", "123456789", "D");
+        System.out.println(m2);
+
+    }
+
+    public static void onibus() {
+
+        Onibus o1 = new Onibus();
+        System.out.println(o1);
+
+        Onibus o2 = new Onibus("ABC1D23", 40, "Mercedes");
+        System.out.println(o2);
+
+    }
+
+    public static void linha() {
+
+        Linha l1 = new Linha();
+        System.out.println(l1);
+
+        Linha l2 = new Linha("100", "Centro", 25.5);
+        System.out.println(l2);
+
+    }
+
+    public static void main(String[] args) {
+
+        motorista();
+        onibus();
+        linha();
+
+    }
+
+}
