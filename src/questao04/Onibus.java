@@ -1,32 +1,51 @@
 package questao04;
 
-public class Onibus {
+public class Ônibus {
 
-	private String Placa;
-	private String Modelo;
-	private int Capacidade;
-		
-	public void setPlaca(String placa) {
-		this.Placa = placa;
-	}
-	public void setCapacidade(int capa) {
-		this.Capacidade = capa;
-	}
-	public void setModelo (String modelo) {
-		this.Modelo = modelo;
-	}
+    private String placa;
+    private int capacidade;
+    private String modelo;
 
-	
-	public String getModelo () {
-		return this.Modelo;
-	}
-	public int getCapacidade() {
-		return this.Capacidade;
-	}
-	public String getPlaca () {
-		return this.Placa;
-	}	
-	public String toString() {
-		return " Placa: " + Placa + " -  Modelo: " + Modelo + " - Capacidade: " + Capacidade;
-	}
+    public Onibus() {
+
+    }
+
+    public Onibus(String placa, int capacidade, String modelo) {
+        this.placa = placa;
+        setCapacidade(capacidade);
+        this.modelo = modelo;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public void setCapacidade(int capacidade) {
+        if(capacidade >= 10) {
+            this.capacidade = capacidade;
+        } else {
+            this.capacidade = 0;
+        }
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getPlaca() {
+        return this.placa;
+    }
+
+    public int getCapacidade() {
+        return this.capacidade;
+    }
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public String toString() {
+        return "Placa: " + placa + " - Capacidade: " + capacidade + " - Modelo: " + modelo;
+    }
+
 }
