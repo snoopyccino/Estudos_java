@@ -2,24 +2,32 @@ package questao04;
 
 public class Motorista {
 
-    private String Nome;
+    private String nome;
     private String CNH;
-    private String Categoria;
+    private String categoria;
 
-    public void setNome(String nome) {
-        this.Nome = nome;
+    public Motorista() {}
+
+    public Motorista(String nome, String CNH, String categoria) {
+        this.nome = nome;
+        this.CNH = CNH;
+        this.categoria = categoria;
     }
 
-    public void setCNH(String cnh) {
-        this.CNH = cnh;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCNH(String CNH) {
+        this.CNH = CNH;
     }
 
     public void setCategoria(String categoria) {
-        this.Categoria = categoria;
+        this.categoria = categoria;
     }
 
     public String getNome() {
-        return this.Nome;
+        return this.nome;
     }
 
     public String getCNH() {
@@ -27,9 +35,11 @@ public class Motorista {
     }
 
     public String getCategoria() {
-        return this.Categoria;
+        return this.categoria;
     }
+
     public String toString() {
-		return " Nome: " + Nome + " -  CNH: " + CNH + " - Categoria: " + Categoria;
-	}
+        return "Nome: " + nome + " - CNH: " + CNH + " - Categoria: " + categoria;
+    }
+
 }
